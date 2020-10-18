@@ -164,6 +164,7 @@ p {
 
 .section__container {
   max-width: 1200px;
+  margin: auto;
 }
 
 /* About */
@@ -252,7 +253,7 @@ p {
   margin-bottom: 32px;
 }
 
-.skill_description {
+.skill__description {
   display: flex;
   justify-content: space-between;
 }
