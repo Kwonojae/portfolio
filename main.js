@@ -64,6 +64,14 @@ workBtnContainer.addEventListener('click', (e) => {
         return;
     }
 
+    //Remove selection from the previous item and select the new one 현재 클릭된 엑티브로 옮겨가는코드
+    const active = document.querySelector('.category__btn.selected');
+    active.classList.remove('selected');
+    const target = e.target.nodeName === 'BUTTON' ? e.target : e.target.parentNode;
+    target.classList.add('selected');
+   
+  
+
     ProjectContainer.classList.add('anim-out');
     setTimeout(() => {
         Projects.forEach((project) => {

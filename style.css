@@ -46,7 +46,7 @@ body {
 
 a {
   text-decoration: none;
-  color: var(--color-white);
+  color: var(--color-black);
 }
 
 ul {
@@ -123,16 +123,15 @@ p {
 .navbar__menu__item {
   padding: 8px 12px;
   margin: 0 4px;
+  color: var(--color-black);
   cursor: pointer;
+  border: 1px solid transparent;
   border-radius: var(--size-border-radius);
-}
-
-.navbar__menu__item.active {
-  border: 1px solid var(--color-black);
 }
 
 .navbar__menu__item:hover {
   /* 마우스 오버되었을때 색변경*/
+  border-color: var(--color-black);
   background-color: var(--color-white);
 }
 
@@ -147,7 +146,7 @@ p {
 
 /* Home */
 #home {
-  background: url("imgs/HomeBg2.jpg") center/cover no-repeat;
+  background: url("imgs/HomeBg1.jpg") center/cover no-repeat;
   padding: 40px;
   padding-top: 120px;
   text-align: center;
@@ -316,13 +315,13 @@ p {
   padding: 8px 48px;
 }
 
-.category__btn.active,
+.category__btn.selected,
 .category__btn:hover {
   background-color: var(--color-dark-pink);
   color: var(--color-white);
 }
 
-.category__btn.active .category__count,
+.category__btn.selected .category__count,
 .category__btn:hover .category__count {
   opacity: 1;
   top: 0;
