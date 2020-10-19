@@ -105,6 +105,7 @@ p {
   color: var(--color-black);
   padding: 16px;
   transition: all var(--animation-duration) ease-in-out;
+  z-index: 1;
 }
 
 #navbar.navbar--dark {
@@ -132,7 +133,7 @@ p {
 
 .navbar__menu__item:hover {
   /* 마우스 오버되었을때 색변경*/
-  background-color: var(--color-yellow);
+  background-color: var(--color-white);
 }
 
 .navbar__toggle-btn {
