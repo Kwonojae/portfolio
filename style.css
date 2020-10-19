@@ -96,12 +96,20 @@ p {
 }
 
 #navbar {
+  position: fixed;
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  background-color: var(--color-orange);
+  background-color: transparent;
   align-items: center;
-  color: var(--color-white);
+  color: var(--color-black);
   padding: 16px;
+  transition: all var(--animation-duration) ease-in-out;
+}
+
+#navbar.navbar--dark {
+  background-color: var(--color-yellow);
+  padding: 8px;
 }
 
 .navbar__menu {
@@ -119,12 +127,12 @@ p {
 }
 
 .navbar__menu__item.active {
-  border: 1px solid var(--color-white);
+  border: 1px solid var(--color-black);
 }
 
 .navbar__menu__item:hover {
   /* 마우스 오버되었을때 색변경*/
-  background-color: var(--color-dark-pink);
+  background-color: var(--color-yellow);
 }
 
 .navbar__toggle-btn {
@@ -140,6 +148,7 @@ p {
 #home {
   background: url("imgs/HomeBg2.jpg") center/cover no-repeat;
   padding: 40px;
+  padding-top: 120px;
   text-align: center;
 }
 
