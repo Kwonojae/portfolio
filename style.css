@@ -237,13 +237,17 @@ p {
   text-align: left;
 }
 
+.job__logo {
+  width: 300px;
+  height: 150px;
+}
 .job__name,
 .job__period {
   color: var(--color-light-grey);
 }
 
 .job__name {
-  font-size: var(--font-small);
+  font-size: var(--font-medium);
 }
 
 .job__period {
